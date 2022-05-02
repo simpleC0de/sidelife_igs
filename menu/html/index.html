@@ -1,0 +1,159 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="/menu/html/style.css" type="text/css">
+        <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+        <script src ="script.js" type="text/javascript"></script>
+
+    </head>
+
+    <style>
+
+        @font-face {
+            font-family: "Myriad Pro";
+            src: url("font.woff");
+        }
+#submit {
+    background-color:#44c767;
+    border-radius:28px;
+    border:1px solid #18ab29;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Arial;
+    font-size:12px;
+    padding:11px 31px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #2f6627;
+    position: absolute;
+    left: 380px;
+    top: 300px
+}
+#submit:hover {
+    background-color:#5cbf2a;
+}
+#submit:active {
+    position:relative;
+    top:1px;
+}
+        
+#exit {
+    border:1px solid #35bdbf;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Arial;
+    font-size:12px;
+    padding:7px 17px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #2f6627;
+    position: absolute;
+    left: 380px;
+    top: 300px
+}
+#exit:hover {
+    background-color:#5cbf2a;
+}
+#exit:active {
+    position:relative;
+    top:1px;
+}
+#deposit {
+    background-color:#44c767;
+    border-radius:28px;
+    border:1px solid #18ab29;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Arial;
+    font-size:12px;
+    padding:11px 31px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #2f6627;
+    position: absolute;
+    left: 380px;
+    top: 300px
+}
+#deposit:hover {
+    background-color:#5cbf2a;
+}
+#deposit:active {
+    position:relative;
+    top:1px;
+}
+        
+#withdraw {
+    border-radius:28px;
+    border:1px solid #35bdbf;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Arial;
+    font-size:12px;
+    padding:11px 31px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #2f6627;
+    position: absolute;
+    left: 380px;
+    top: 300px
+}
+#withdraw:hover {
+    background-color:#5cbf2a;
+}
+#withdraw:active {
+    position:relative;
+    top:1px;
+}  
+    </style>
+    <body>
+
+       
+
+        <div id = "container" style="background-image: url(background.png); background-repeat: no-repeat; height: 700px; width: 700px; left: 30%; top: 460px; margin: 0 auto; position: absolute;">
+            <form id= "form">
+          
+                <div style="position: absolute; left: 350px; top: 55px; z-index: 200; font-size: 36px; font-family: Myriad Pro; opacity: 90%;">
+                    <strong id="igs:id" style="opacity: 100%;"> 21 </strong>
+                </div>
+
+                <div style="position: absolute; left: 40px; top: 150px; font-size: 34.56px; font-family: Myriad Pro;">
+                    <strong id="igs:soldfuel">1000</strong>
+                </div>
+
+                <div style="position: absolute; left: 260px; top: 150px; font-size: 34.56px; font-family: Myriad Pro;">
+                    <strong id="igs:account">723.819</strong>
+                </div>
+
+                <div style="position: absolute; left: 475px; top: 150px; font-size: 34.56px; font-family: Myriad Pro;">
+                    <strong id="igs:fuel">41304</strong>
+                </div>
+                
+                <div style="position: absolute; left: 141px; top: 260px; font-size: 34.56px; font-family: Myriad Pro;">
+                    <strong id="igs:fuelcost">25</strong>
+                </div>
+
+                <div style="position: absolute; left: 393px; top: 260px; font-size: 34.56px; font-family: Myriad Pro;">
+                    <strong id="igs:buyprice">15</strong>
+                </div>
+        
+
+              <input id="inpFuelcost" placeholder="15" style="position: absolute; top: 310px; left: 140px; background: #35bdbf; width: 95; border-style: groove; text-align: center;"> </input>
+
+              <input id="inpBuyprice" placeholder="10" style="position: absolute; top: 310px; left: 394px; background: #35bdbf; width: 95; border-style: groove; text-align: center;"> </input>
+          
+                <input id="inpamount" placeholder="10" style="position: absolute; top: 375px; left: 140px; background: #35bdbf; width: 95; border-style: groove; text-align: center;"> </input>    
+
+                
+                <button id="submit" style="position: absolute; left: 540; top: 360px; background: green; font-family: Myriad Pro"><strong>Aktualisieren</strong></button> 
+                <button id="exit" style="position: absolute; left: 628; top: 42px; background: red; font-family: Myriad Pro;"> <strong>X</strong> </button>
+        
+                <button id="deposit" style="position: absolute; left: 240; top: 360px; background: green; font-family: Myriad Pro"><strong>Einzahlen</strong></button> 
+                <button id="withdraw" style="position: absolute; left: 360; top: 360px; background: red; font-family: Myriad Pro"> <strong>Auszahlen</strong> </button>                
+        
+            </form>
+        </div>
+
+        
+
+    </body>
+
+</html>
